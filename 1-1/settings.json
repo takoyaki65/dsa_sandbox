@@ -1,0 +1,22 @@
+{
+    "id": "1-1",
+    "max_time": 2000,
+    "max_memory": 262144,
+    "required_files": [
+        "gcd_euclid.c"
+    ],
+    "test_codes": [
+        "main_euclid.c"
+    ],
+    "makefile": "Makefile",
+    "compile_command": "make",
+    "binary_file": "gcd_euclid",
+    "light_test_cases": [
+        "sample00",
+        "sample01"
+    ],
+    "heavy_test_cases": [
+        "test00",
+        "test01"
+    ]
+}
