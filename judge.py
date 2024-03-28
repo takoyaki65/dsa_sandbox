@@ -74,6 +74,8 @@ def main():
                 "docker",
                 "run",
                 "-td",
+                "--security-opt",
+                "no-new-privileges",
                 "--name",
                 container_name,
                 "--memory",
@@ -85,8 +87,8 @@ def main():
                 "dsa_sandbox",
             ],
             check=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
             text=True,
         )
         
